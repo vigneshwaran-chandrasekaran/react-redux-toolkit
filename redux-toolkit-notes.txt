@@ -53,3 +53,16 @@ const { increment, decrement } = actions
 createSlice combines the actions and reducer
 
 ---------------------------------------------------------------------------------------------------------
+configureStore
+configureStore This will automatically set up the Redux DevTools Extension for us.
+
+createSlice function allows us to consolidate that logic in one place.
+
+createSlice uses createReducer and createAction internally,
+so in most apps, you won't need to use them yourself - createSlice is all you need.
+
+---------------------------------------------------------------------------------------------------------
+
+
+tomorrow start from below links
+https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#creating-the-todos-slice
