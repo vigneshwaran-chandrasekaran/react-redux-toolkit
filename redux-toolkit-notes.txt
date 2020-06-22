@@ -12,6 +12,9 @@ https://stackoverflow.com/questions/60316251/how-to-use-redux-thunk-with-redux-t
 
 Redux Toolkit has a configureStore() function that wraps createStore()
 
+---------------------------------------------------------------------------------------------------------
+
+https://redux-starter-kit.js.org/tutorials/basic-tutorial
 
 createAction
 // Or, use `createAction` to generate the action creator:
@@ -19,3 +22,34 @@ const incrementNew = createAction('INCREMENT')
 
 console.log(incrementNew())
 // {type: "INCREMENT"}
+
+
+---------------------------------------------------------------------------------------------------------
+createSlice
+
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: 0,
+  reducers: {
+    increment: state => state + 1,
+    decrement: state => state - 1
+  }
+})
+
+const store = configureStore({
+  reducer: counterSlice.reducer
+})
+
+document.getElementById('increment').addEventListener('click', () => {
+  store.dispatch(counterSlice.actions.increment())
+})
+
+
+const { actions, reducer } = counterSlice
+const { increment, decrement } = actions
+
+
+createSlice combines the actions and reducer
+
+---------------------------------------------------------------------------------------------------------
