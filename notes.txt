@@ -1,0 +1,9 @@
+https://github.com/christofferberg/react-redux-toolkit-example
+
+https://react-redux-toolkit-example.now.sh/sign-in
+
+https://github.com/christofferberg/react-redux-toolkit-example
+
+https://dev.to/vcapretz/writing-modern-redux-in-2020-the-powerful-createslice-1i5m
+
+https://stackoverflow.com/questions/60316251/how-to-use-redux-thunk-with-redux-toolkits-createslice

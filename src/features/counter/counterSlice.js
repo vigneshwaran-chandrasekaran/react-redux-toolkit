@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const counterSlice = createSlice({
-  name: "counter",
+  name: "counter", // name of the reducer
   initialState: {
     value: 0,
     age: 18,
@@ -42,5 +42,7 @@ export const incrementAsync = (amount) => (dispatch) => {
 export const selectCount = (state) => state.counter.value;
 
 export const selectValue = (state) => state;
+
+export const selectCounter = (state) => state.counter;
 
 export default counterSlice.reducer;
