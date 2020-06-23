@@ -64,8 +64,6 @@ so in most apps, you won't need to use them yourself - createSlice is all you ne
 ---------------------------------------------------------------------------------------------------------
 
 
-tomorrow start from below links
-https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#creating-the-todos-slice
 
 
 We could replace those using RTK's createReducer and createAction functions. However,
@@ -126,3 +124,10 @@ https://stackoverflow.com/a/59423268/3882241
 ADD_TODO === 'todos/addTodo'
 
 'todos/addTodo' -> todos is name of the createSlice, addTodo is reducers object one of the key
+
+----------------------------------------------------------------------
+
+tomorrow start from below links
+
+
+https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#optimizing-todo-filtering
