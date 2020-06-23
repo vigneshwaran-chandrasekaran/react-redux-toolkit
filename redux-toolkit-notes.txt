@@ -113,3 +113,10 @@ and the functions are reducers that will be run when that action type is dispatc
 (These are sometimes referred to as "case reducers", because they're similar to a case in a switch statement)
 
 ---------------------------------------------------------------------------------------------------------
+
+https://javascript.info/optional-chaining
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
+console.log(adventurer?.sd || 'hiii');
+---------------------------------------------------------------------------------------------------------
