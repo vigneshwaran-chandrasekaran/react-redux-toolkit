@@ -66,3 +66,7 @@ so in most apps, you won't need to use them yourself - createSlice is all you ne
 
 tomorrow start from below links
 https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#creating-the-todos-slice
+
+
+We could replace those using RTK's createReducer and createAction functions. However,
+the RTK createSlice function allows us to consolidate that logic in one place.
