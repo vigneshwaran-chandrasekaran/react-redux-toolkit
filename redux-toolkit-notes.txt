@@ -119,4 +119,10 @@ https://javascript.info/optional-chaining
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
 console.log(adventurer?.sd || 'hiii');
+
+https://stackoverflow.com/a/59423268/3882241
 ---------------------------------------------------------------------------------------------------------
+
+ADD_TODO === 'todos/addTodo'
+
+'todos/addTodo' -> todos is name of the createSlice, addTodo is reducers object one of the key
