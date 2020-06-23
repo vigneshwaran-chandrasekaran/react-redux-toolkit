@@ -70,3 +70,46 @@ https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#creating-the-to
 
 We could replace those using RTK's createReducer and createAction functions. However,
 the RTK createSlice function allows us to consolidate that logic in one place.
+
+---------------------------------------------------------------------------------------------------------
+
+js object is state of redux,
+it will call combineReducers
+
+
+import { createSlice } from '@reduxjs/toolkit'
+
+const todosSlice = createSlice({
+  name: 'todos',
+  initialState: [],
+  reducers: {
+    addTodo(state, action) {
+      const { id, text } = action.payload
+      state.push({ id, text, completed: false })
+    },
+    toggleTodo(state, action) {
+      const todo = state.find(todo => todo.id === action.payload)
+      if (todo) {
+        todo.completed = !todo.completed
+      }
+    }
+  }
+})
+
+export const { addTodo, toggleTodo } = todosSlice.actions
+
+export default todosSlice.reducer
+
+createSlice Options#
+
+createSlice takes an options object as its argument, with these options:
+
+name: a string that is used as the prefix for generated action types
+
+initialState: the initial state value for the reducer
+
+reducers: an object, where the keys will become action type strings,
+and the functions are reducers that will be run when that action type is dispatched.
+(These are sometimes referred to as "case reducers", because they're similar to a case in a switch statement)
+
+---------------------------------------------------------------------------------------------------------
