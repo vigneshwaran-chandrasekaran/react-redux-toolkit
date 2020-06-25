@@ -127,7 +127,19 @@ ADD_TODO === 'todos/addTodo'
 
 ----------------------------------------------------------------------
 
-tomorrow start from below links
+useEffect(() => {
+    async function fetchEverything() {
+      async function fetchIssues() {
+        const issuesResult = await getIssues(org, repo, page)
+        setIssues(issuesResult)
+      }
+    fetchEverything()
+  }, [org, repo, page]);
 
 
-https://redux-starter-kit.js.org/tutorials/intermediate-tutorial#optimizing-todo-filtering
+we can't declare the useEffect callback itself as async.
+React expects that the return value from a useEffect callback will be a cleanup function.
+Since all async functions return a Promise automatically, React would see that Promise instead,
+and that would prevent React from actually cleaning up correctly.
+
+----------------------------------------------------------------------
