@@ -143,3 +143,13 @@ Since all async functions return a Promise automatically, React would see that P
 and that would prevent React from actually cleaning up correctly.
 
 ----------------------------------------------------------------------
+
+Thinking in Thunks
+
+The Redux core (ie, createStore) is completely synchronous.
+When you call store.dispatch(), the store runs the root reducer, saves the return value, runs the subscriber callbacks,
+and returns, with no pause. 
+
+By default, any asynchronicity has to happen outside of the store.
+
+----------------------------------------------------------------------
