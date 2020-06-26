@@ -160,3 +160,11 @@ dispatching or checking the current store state?
 That's where Redux middleware come in.
 
 ----------------------------------------------------------------------
+
+The word "thunk" means
+
+In computer programming, a thunk is a subroutine used to inject an additional calculation into another subroutine.
+Thunks are primarily used to delay a calculation until its result is needed.
+
+The word "thunk" means "a function that delays a calculation until later".
+
