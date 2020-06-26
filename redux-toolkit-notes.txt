@@ -205,3 +205,7 @@ export const addTodo = ({ title, userId }) => {
     // ...
   };
 };
+
+Using getState can be really useful to react differently depending on the current state.
+For example, if we want to limit our app to only 4 todo items at a time,
+we could return from the function if the state already contains the maximum amount of todo items:
