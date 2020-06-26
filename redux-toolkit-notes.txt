@@ -176,3 +176,32 @@ they cannot be defined as part of a createSlice() call. You have to write them s
 ----------------------------------------------------------------------
 
 https://www.digitalocean.com/community/tutorials/redux-redux-thunk
+
+getState
+
+On top of receiving the dispatch method from the state,
+the function returned by an asynchronous action creator with Redux Thunk
+also receives the store’s getState method, so that current store values can be read:
+
+export const addTodo = ({ title, userId }) => {
+  return (dispatch, getState) => {
+    dispatch(addTodoStarted());
+
+    console.log('current state:', getState());
+
+    // ...
+  };
+};
+
+
+export const addTodo = ({ title, userId }) => {
+  return (dispatch, getState) => {
+    const { todos } = getState();
+
+    if (todos.length >= 4) return;
+
+    dispatch(addTodoStarted());
+
+    // ...
+  };
+};
