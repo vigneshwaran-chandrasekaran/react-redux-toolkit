@@ -259,3 +259,29 @@ by default comes with three packages:
 these three available under getDefaultMiddleware();
 
 ----------------------------------------------------------------------
+
+https://redux.js.org/style-guide/style-guide
+
+Structure Files as Feature Folders or Ducks
+
+
+RTK recommend that most applications should structure files using a "feature folder" approach
+(all files for a feature in the same folder) or the "ducks" pattern (all Redux logic for a feature in a single file),
+rather than splitting logic across separate folders by "type" of code (reducers, actions, etc).
+
+
+Put as Much Logic as Possible in Reducers
+
+try to put as much of the logic for calculating a new state into the appropriate reducer,
+rather than in the code that prepares and dispatches the action (like a click handler).
+
+----------------------------------------------------------------------
+
+doing the logic in the reducer is preferable for several reasons:
+
+* Reducers are always easy to test, because they are pure functions
+
+* So, the more logic you can put in a reducer, the more logic you have that is easily testable.
+
+* Finally, putting logic in reducers means you know where to look for the update logic,
+instead of having it scattered in random other parts of the application code.
