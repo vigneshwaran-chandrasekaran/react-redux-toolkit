@@ -285,3 +285,23 @@ doing the logic in the reducer is preferable for several reasons:
 
 * Finally, putting logic in reducers means you know where to look for the update logic,
 instead of having it scattered in random other parts of the application code.
+
+
+----------------------------------------------------------------------
+
+createAction
+
+const action = createAction('addStudent');
+console.log(action());
+will return
+{type: 'addStudent', payload:undefined}
+
+console.log(action(1));
+will return
+{type: 'addStudent', payload:1}
+
+console.log(action({name: 'hi'}));
+will return
+{type: 'addStudent', payload:{name: 'hi'}}
+
+----------------------------------------------------------------------
