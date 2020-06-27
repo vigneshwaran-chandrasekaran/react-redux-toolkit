@@ -242,3 +242,11 @@ reducers is the default export
 need to export individual action creators
 
 no need to export action constants
+
+----------------------------------------------------------------------
+
+redux-immutable-state-invariant
+
+will prevent mutation in redux store
+----------------------------------------------------------------------
+
