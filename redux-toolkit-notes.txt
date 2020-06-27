@@ -250,3 +250,12 @@ redux-immutable-state-invariant
 will prevent mutation in redux store
 ----------------------------------------------------------------------
 
+RTK - Redux toolkit
+by default comes with three packages:
+1. redux-immutable-state-invariant
+2. serializable-state-invariant-middleware
+3. redux-thunk
+
+these three available under getDefaultMiddleware();
+
+----------------------------------------------------------------------
