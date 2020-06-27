@@ -304,4 +304,34 @@ console.log(action({name: 'hi'}));
 will return
 {type: 'addStudent', payload:{name: 'hi'}}
 
+
+createAction will return action creator object
+
+----------------------------------------------------------------------
+
+Redux best practices
+
+create our state as object
+
+[
+  {id:1, name: 'a'},
+  {id:2, name: 'b'}
+  {id:3, name: 'c'}
+]
+
+he to find data we need array find loop
+
+in this approach it will take more time to find id
+
+let data = {
+  1: {id:1, name: 'a'},
+  2: {id:2, name: 'b'}
+  3: {id:3, name: 'c'}
+}
+
+we can easily find value using
+
+data[2]
+
+easy to find values
 ----------------------------------------------------------------------
