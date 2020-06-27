@@ -351,3 +351,9 @@ how we do datatable normalization
 it will eliminate repeated duplicate data
 
 ----------------------------------------------------------------------
+
+https://github.com/reduxjs/reselect
+
+reselect used for memoize the state data
+
+----------------------------------------------------------------------
