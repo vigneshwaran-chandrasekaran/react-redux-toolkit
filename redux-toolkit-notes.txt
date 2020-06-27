@@ -334,4 +334,20 @@ we can easily find value using
 data[2]
 
 easy to find values
+
+pros:
+objects are used for fast lookup data
+
+cons:
+ordered data objects are not suitable,
+if we need ordered data use array
+----------------------------------------------------------------------
+
+normalizr
+
+normalizr package is used to normalize the state data,
+how we do datatable normalization
+
+it will eliminate repeated duplicate data
+
 ----------------------------------------------------------------------
