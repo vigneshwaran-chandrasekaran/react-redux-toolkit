@@ -217,3 +217,20 @@ https://www.freecodecamp.org/news/redux-thunk-explained-with-examples/
 Redux Thunk is middleware that allows you to return functions,
 rather than just actions, within Redux.
 This allows for delayed actions, including working with promises.
+
+
+----------------------------------------------------------------------
+
+Ducks pattern
+
+reRUX last 3 characters is the name of Ducks pattern
+
+normal redux we commonly use 3 files
+
+actions,
+actionTypes (actionCreators),
+reducers
+
+in Ducks pattern we use single file to handle all these process
+
+----------------------------------------------------------------------
