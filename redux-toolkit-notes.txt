@@ -357,3 +357,19 @@ https://github.com/reduxjs/reselect
 reselect used for memoize the state data
 
 ----------------------------------------------------------------------
+
+redux action key type convention
+
+Present - old day
+
+GET_BUGS_REQUEST
+GET_BUGS_SUCCESS
+GET_BUGS_FAIL
+
+Past - new way of key
+
+bugsRequested
+bugsReceived
+bugsRequestFailed
+
+----------------------------------------------------------------------
