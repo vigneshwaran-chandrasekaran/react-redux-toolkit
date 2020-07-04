@@ -1,0 +1,10 @@
+normal redux we can't do api call or side effects functions
+
+using thunk or saga (middleware) we can do api call
+
+normal action creators will return object
+
+using thunk action creators will return function
+
+that returns function contains (dispatch, getState)
+
